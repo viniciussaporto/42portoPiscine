@@ -1,22 +1,23 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int	ft_strlen(char *b)
+int	ft_strlen(char *str)
 {
-	int a;
+	char *a;
 
-	a = 0;
-	while (b[a] != '\0')
+	a = str;
+	while (*str != '\0')
 	{
-		a++;
+		str++;
 	}
-	return (0);
+	return (str - a);
 }
 
 int	main(void)
 {
-	char b[] = "teste";
+	char b[5] = "teste";
 	int cnt = ft_strlen(b);
 
 	print("%d\n", cnt);
+	return (0);
 }

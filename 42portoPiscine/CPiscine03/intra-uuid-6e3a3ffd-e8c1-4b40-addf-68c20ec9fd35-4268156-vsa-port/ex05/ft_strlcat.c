@@ -50,14 +50,18 @@ unsigned int	ft_strlcat(char *str, char *src, unsigned int size)
 	str[j] = '\0';
 	return (dtln + srcln);
 }
-#include <stdio.h>
-int	main(void)
+/*#include <stdio.h>
+#include <bsd/string.h>
+int    main(void)
 {
-	char	src[] = "Kiki";
-	char	dest[] = "EI";
+    char    src[30] = "Kiki";
+    char    dest[30] = "EI";
+    char	*test;
 
-	ft_strlcat(str, src, 10);
-	printf("%i \n", str);
-	printf("%s \n", str);
-	return (0);
-}
+    ft_strlcat(src, dest, 10);
+    printf("%s \n\t", src); 
+    printf("%s \n", src);
+    test = strlcat(src, dest, 10);
+    printf("%d", test);
+    return (0);
+}*/

@@ -28,16 +28,19 @@ char	*ft_strstr(char *str, char *to_find)
 		if (to_find[j] == '\0')
 			return (str + i);
 		i++;
-		j = 0;
 	}
 	return (0);
 }
-#include <stdio.h>
+/*#include <stdio.h>
+#include <string.h>
 int	main()
 {
-	char	str[] = "Hello my name is vinicius";
-	char	to_find[] = "my name is";
+	char	str[] = "Hello my name is vinicius 42porto";
+	char	to_find[] = "diana";
+	char	*test;
 
-	printf("%s", ft_strstr(str, to_find));
+	printf("Substring: %s\n\t", ft_strstr(str, to_find));
+	test = strstr(str, to_find);
+	printf("The real function substring: %s", test);
 	return (0);
-}
+}*/

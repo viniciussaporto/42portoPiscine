@@ -18,18 +18,16 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 
 	i = 0;
 	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
-	{
 		i++;
-	}
 	return (s1[i] - s2[i]);
 }
 /*#include <string.h>
 #include <stdio.h>
 int	main(void)
 {
-	char	a[] = "ZAZ";
-	char	b[] = "AZI";
-	int	i = 4;
+	char	a[30] = "abluble";
+	char	b[30] = "babuino";
+	int	i = 10;
 
 	printf("%s\n", a);
 	printf("%s\n", b);

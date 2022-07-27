@@ -23,9 +23,3 @@ void	ft_print_numbers(void)
 		numbers++;
 	}
 }
-
-int	main(void)
-{
-	ft_print_numbers();
-	return (0);
-}

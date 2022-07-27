@@ -116,7 +116,7 @@ int	main(int argc, char *argv[])
 		return (0);
 	else
 	{
-		write(1, "Error:bb\n", 8);
+		write(1, "Error\n", 6);
 		return (1);
 	}
 }

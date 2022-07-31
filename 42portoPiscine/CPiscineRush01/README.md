@@ -1,4 +1,4 @@
-0% - has compiler flags give errors, but works nonetheless.
+0% - compiler flags give errors, but works nonetheless.
 
 Solves Skyscrapper Puzzles, you can get them at: https://www.puzzle-skyscrapers.com/
 

@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vsa-port <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/30 15:52:04 by vsa-port          #+#    #+#             */
-/*   Updated: 2022/07/30 15:52:05 by vsa-port         ###   ########.fr       */
+/*   Created: 2022/07/31 10:57:17 by vsa-port          #+#    #+#             */
+/*   Updated: 2022/07/31 10:57:20 by vsa-port         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
-int	ft_fibonacci(int index)
+void    ft_putstr(char *str)
 {
-	if (index < 0)
-		return (-1);
-	if (index < 2)
-		return (index);
-	return ((ft_fibonacci(index - 1)) + (ft_fibonacci(index - 2)));
+    while (*str)
+    {
+        write(1, str, 1);
+        str++;
+    }
 }
-/*int main(void)
+
+int main(int argc, char *argv[])
 {
-    printf("%d\n", ft_fibonacci(-1));
-}*/
+    int i;
+
+    i = 1;
+    while (i < argc)
+    {
+        ft_putstr(argv[i]);
+        write(1, "\n", 1);
+        i++;
+    }
+    return (0);
+}

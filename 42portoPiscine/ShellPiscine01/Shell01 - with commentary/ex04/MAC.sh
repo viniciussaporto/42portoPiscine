@@ -1,2 +1,0 @@
-ifconfig | grep "ether" | awk '{print $2}'
-#if config to show the network interface | grep to print the "ether" lines which show the MAC address of the computer | gawk/awk with '{print $2}' to print the make the 2 lines of output coming from grep
